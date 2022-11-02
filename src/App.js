@@ -3,6 +3,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import HeaderImage from './components/HeaderImage';
+import VideoGrid from './components/VideoGrid';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
@@ -13,6 +14,7 @@ export default function App() {
       <Navbar />
       <HeaderImage />
       <About />
+      <VideoGrid />
       {/* <Projects />
       <Skills />
       <Testimonials />
