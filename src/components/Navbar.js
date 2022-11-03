@@ -3,14 +3,11 @@ import React from 'react';
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav
-      className=" flex flex-wrap items-center justify-between px-2 py-3 mb-3
-    absolute top-0 left-0 right-0 z-10 bg-white transparent"
-    >
+    <nav className="px-0 py-3 mb-3 absolute top-0 left-0 right-0 z-10 bg-white transparent">
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-between">
           <a
-            className="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-primary-50"
+            className="text-lg font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase text-primary-50"
             href="#"
           >
             Tommy Eitniear
@@ -38,15 +35,15 @@ export default function Navbar() {
         </div>
         <div
           className={
-            'lg:flex flex-grow items-center' +
+            'lg:flex flex-grow items-center justify-end' +
             (navbarOpen ? ' flex' : ' hidden')
           }
           id="example-navbar-danger"
         >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <ul className="flex flex-col lg:flex-row justify-end list-none lg:ml-auto">
             <li className="nav-item">
               <a
-                className="px-3 py-2 flex items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
+                className="px-3 py-2 flex justify-end items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
                 href="#about"
               >
                 <i className="fab fa-facebook-square text-lg leading-lg text-primary-50 opacity-75"></i>
@@ -55,7 +52,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="px-3 py-2 flex items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
+                className="px-3 py-2 flex justify-end items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
                 href="#work"
               >
                 <i className="fab fa-twitter text-lg leading-lg text-primary-50 opacity-75"></i>
@@ -64,7 +61,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="px-3 py-2 flex items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
+                className="px-3 py-2 flex justify-end items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
                 href="#testimonials"
               >
                 <i className="fab fa-pinterest text-lg leading-lg text-primary-50 opacity-75"></i>
@@ -73,7 +70,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="px-3 py-2 flex items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
+                className="px-3 py-2 flex justify-end items-center text-lg uppercase font-bold leading-snug text-primary-50 hover:opacity-75"
                 href="#contact"
               >
                 <i className="fab fa-twitter text-lg leading-lg text-primary-50 opacity-75"></i>
