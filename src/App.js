@@ -23,14 +23,14 @@ import {
   Move,
 } from 'react-scroll-motion';
 
-const HeaderAnimation = batch(Move(0, 100, 0, 800));
+const HeaderAnimation = batch(Move(0, 100, 0, 600));
 const AboutAnimation = batch(FadeIn());
 
 export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
       <Navbar />
-      <ScrollContainer snap="mandatory">
+      <ScrollContainer snap="proximity">
         <ScrollPage page={0}>
           <Animator animation={HeaderAnimation}>
             <HeaderImage />

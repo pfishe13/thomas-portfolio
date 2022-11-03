@@ -27,7 +27,7 @@ const HeaderImage = () => {
     <section className="w-full h-screen">
       <img
         src={thomasImage}
-        className="object-cover w-full h-full"
+        className="absolute object-cover w-full h-full"
         alt="Thomas background"
       ></img>
       <div className="absolute grid place-items-center top-0 w-full h-screen z-20 bg-white">
