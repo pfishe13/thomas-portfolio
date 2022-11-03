@@ -32,7 +32,7 @@ const HeaderImage = () => {
       ></img>
       <div className="absolute grid place-items-center top-0 w-full h-screen z-20 bg-white">
         <Animator animation={batch(MoveOut(0, -700), FadeOut(1, 0))}>
-          <div className="text-5xl font-body text-primary-50 text-opacity-90">
+          <div className="text-3xl font-body text-primary-50 text-opacity-90">
             {count ? (
               <Typist avgTypingDelay={80} onTypingDone={() => setCount(0)}>
                 <span> Tommy Eitniear</span>
