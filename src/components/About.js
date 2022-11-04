@@ -1,4 +1,6 @@
 import React from 'react';
+import highlightTommyLogo from '../images/tommylogo.png';
+import jjlogo from '../images/jjlogo.png';
 
 export default function About() {
   return (
@@ -19,8 +21,13 @@ export default function About() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
             className="object-cover object-center rounded"
-            alt="hero"
-            src="./coding.svg"
+            alt="Highlight Tommy Logo"
+            src={highlightTommyLogo}
+          />
+          <img
+            className="object-cover object-center rounded"
+            alt="JJ Sports Logo"
+            src={jjlogo}
           />
         </div>
       </div>
