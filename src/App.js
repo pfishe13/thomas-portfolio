@@ -30,7 +30,7 @@ export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
       <Navbar />
-      <ScrollContainer snap="proximity">
+      <ScrollContainer snap="none">
         <ScrollPage page={0}>
           <Animator animation={HeaderAnimation}>
             <HeaderImage />
@@ -45,8 +45,8 @@ export default function App() {
       </ScrollContainer>
       {/* <Projects />
       <Skills />
-      <Testimonials />
-      <Contact />  */}
+      <Testimonials />  */}
+      <Contact />
     </main>
   );
 }
